@@ -1,1 +1,4 @@
 source https://www.nuget.org/api/v2
+
+nuget iTextSharp ~> 5.5.10
+nuget NUnit ~> 3.5.0
