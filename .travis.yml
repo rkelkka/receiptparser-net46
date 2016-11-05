@@ -5,7 +5,7 @@ solution: receiptparser-net46.sln
 install:
  - mono .paket/paket.bootstrapper.exe
  - mono .paket/paket.exe restore
- - mono nuget install NUnit.Console -Version 3.5.0 -OutputDirectory testrunner
+ - nuget install NUnit.Console -Version 3.5.0 -OutputDirectory testrunner
 
 script:
   - xbuild /p:Configuration=Debug receiptparser-net46.sln
