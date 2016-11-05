@@ -2,7 +2,7 @@
 {
     public class PdfIn
     {
-        byte[] Data;
+        public readonly byte[] Data;
 
         public PdfIn(byte[] data)
         {
