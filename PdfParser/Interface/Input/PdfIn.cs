@@ -1,4 +1,4 @@
-﻿namespace ReceiptParser.PdfParser.Interface.Input
+﻿namespace PdfParser.Interface.Input
 {
     public class PdfIn
     {

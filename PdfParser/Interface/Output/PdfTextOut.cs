@@ -1,4 +1,4 @@
-﻿namespace ReceiptParser.PdfParser.Interface.Output
+﻿namespace PdfParser.Interface.Output
 {
     public class PdfTextOut
     {

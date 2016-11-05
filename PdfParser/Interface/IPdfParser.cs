@@ -1,5 +1,5 @@
-﻿using ReceiptParser.PdfParser.Interface.Input;
-using ReceiptParser.PdfParser.Interface.Output;
+﻿using PdfParser.Interface.Output;
+using PdfParser.Interface.Input;
 
 namespace ReceiptParser.PdfParser.Interface
 {
