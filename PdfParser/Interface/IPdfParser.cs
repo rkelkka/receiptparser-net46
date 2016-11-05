@@ -3,7 +3,7 @@ using PdfParser.Interface.Input;
 
 namespace ReceiptParser.PdfParser.Interface
 {
-    interface IPdfParser
+    public interface IPdfParser
     {
         /// <summary>
         /// Attempt to parse pdf input as text.

@@ -7,7 +7,7 @@ using iTextSharp.text.pdf.parser;
 
 namespace PdfParser.Impl
 {
-    class PdfParser : IPdfParser
+    public class PdfParser : IPdfParser
     {
         public PdfTextOut Parse(PdfIn input)
         {
