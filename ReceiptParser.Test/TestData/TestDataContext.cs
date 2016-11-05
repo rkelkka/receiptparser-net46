@@ -31,8 +31,7 @@ namespace ReceiptParser.Test
 
         private static string GetPath(string testDataFile)
         {
-            return string.Format("{0}\\{1}\\{2}",
-                AssemblyDir, TestDataDir, testDataFile);
+            return Path.Combine(AssemblyDir, TestDataDir, testDataFile);
         }
     }
 }
