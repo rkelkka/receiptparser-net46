@@ -1,0 +1,15 @@
+language: csharp
+mono: latest
+solution: receiptparser-net46.sln
+
+before_install:
+ - sudo apt-get install nunit-console
+ 
+install:
+ - mono .paket/paket.bootstrapper.exe
+ - mono ./paket/paket.exe restore
+ - nuget install NUnit.Runners -Version 3.5.0 -OutputDirectory testrunner
+
+script:
+  - xbuild /p:Configuration=Debug solution-name.sln
+  - mono ./testrunner/NUnit.Runners.3.5.0/tools/nunit3-console.exe -v 	ReceiptParser.Test/bin/Debug/ReceiptParser.Test.dll
