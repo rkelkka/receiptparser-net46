@@ -1,0 +1,1 @@
+Test data derived from PdfParser output based on real pdf receipt. UTF-8 encoding. Payment card information removed from the end.

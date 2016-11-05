@@ -1,4 +1,5 @@
 ﻿using ReceiptParser.Unit;
+using System;
 
 namespace ReceiptParser.ReceiptParser.Interface.Output
 {
@@ -10,12 +11,14 @@ namespace ReceiptParser.ReceiptParser.Interface.Output
         public readonly Station Station;
         public readonly Quantity Litres;
         public readonly Currency Eur;
+        public readonly DateTime Date;
 
-        public FuelReceiptData(Station station, Quantity litres, Currency eur)
+        public FuelReceiptData(Station station, Quantity litres, Currency eur, DateTime date)
         {
             Station = station;
             Litres = litres;
             Eur = eur;
+            Date = date;
         }
 
     }

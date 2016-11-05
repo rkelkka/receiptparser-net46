@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiptCategoryParser.cs" />
     <Compile Include="ReceiptParser.Interface\Input\ReceiptDataIn.cs" />
     <Compile Include="ReceiptParser.Interface\IReceiptCategoryParser.cs" />
     <Compile Include="ReceiptParser.Interface\IReceiptParser.cs" />

@@ -41,9 +41,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiptCategoryParserTest.cs" />
+    <Compile Include="TestData\TestData.cs" />
+    <Compile Include="TestData\TestDataContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />
+    <None Include="TestData\README.MD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReceiptParser\ReceiptParser.csproj">
+      <Project>{3F1E5C9C-5E1C-4B31-8857-8B9ED9FEB97D}</Project>
+      <Name>ReceiptParser</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestData\Prisma_Kaleva_Tampere_2016-10-19.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
