@@ -3,9 +3,9 @@ using ReceiptParser.PdfParser.Interface;
 using ReceiptParser.ReceiptParser.Interface;
 using ReceiptParser.ReceiptParser.Interface.Output;
 
-namespace CmdLine
+namespace ParserFacade
 {
-    internal class Context
+    public class Context
     {
         public readonly IPdfParser PdfParser;
         public readonly IReceiptFormatParser ReceiptFormatParser;

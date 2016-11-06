@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmdLine", "CmdLine\CmdLine.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfHttpRequestApp", "PdfHttpRequestApp\PdfHttpRequestApp.csproj", "{C0634304-F6CF-4F0E-92C2-32A5DF2BF1FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserFacade", "ParserFacade\ParserFacade.csproj", "{62129F40-A7C4-4D21-9BB7-21C7BC74C3DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{C0634304-F6CF-4F0E-92C2-32A5DF2BF1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0634304-F6CF-4F0E-92C2-32A5DF2BF1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0634304-F6CF-4F0E-92C2-32A5DF2BF1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62129F40-A7C4-4D21-9BB7-21C7BC74C3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62129F40-A7C4-4D21-9BB7-21C7BC74C3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62129F40-A7C4-4D21-9BB7-21C7BC74C3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62129F40-A7C4-4D21-9BB7-21C7BC74C3DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
