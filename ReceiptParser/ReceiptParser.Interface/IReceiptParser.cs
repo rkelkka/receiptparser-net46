@@ -2,7 +2,7 @@
 
 namespace ReceiptParser.ReceiptParser.Interface
 {
-    interface IReceiptParser
+    interface IReceiptParser<T>
     {
         /// <summary>
         /// Attempt to parse a receipt.
@@ -10,6 +10,6 @@ namespace ReceiptParser.ReceiptParser.Interface
         /// <param name="receipt"></param>
         /// <returns>T</returns>
         /// <exception cref="InvalidArgumentException">when input data is unsupported format</exception>
-        T ParseReceipt<T>(ReceiptDataIn receipt);
+        T ParseReceipt(ReceiptDataIn receipt);
     }
 }
