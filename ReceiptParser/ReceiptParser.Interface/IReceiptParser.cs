@@ -3,7 +3,7 @@ using System;
 
 namespace ReceiptParser.ReceiptParser.Interface
 {
-    interface IReceiptParser<T>
+    public interface IReceiptParser<T>
     {
         /// <summary>
         /// Attempt to parse a receipt.

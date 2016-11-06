@@ -3,7 +3,7 @@ using ReceiptParser.ReceiptParser.Interface.Output;
 
 namespace ReceiptParser.ReceiptParser.Interface
 {
-    interface IReceiptFormatParser
+    public interface IReceiptFormatParser
     {
 
         /// <summary>
