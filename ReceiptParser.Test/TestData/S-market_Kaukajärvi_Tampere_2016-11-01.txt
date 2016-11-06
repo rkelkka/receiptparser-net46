@@ -1,0 +1,44 @@
+﻿ S­Market Kaukajärvi Y­tunnus 0536307­0 
+    Keskisenkatu 5 Tre 010 767 1120
+     ma­pe 7­22,la 8­22 ja su 10­21
+
+1  K1  M000001/0969E  17:50    1­11­2016
+
+RASVATON MAITO                     0.68 
+LIHAKAALILAATIKKO                  5.65 
+SATSUMA                            0.82 
+  0.485 KG       1.69 EUR/KG
+BANAANI CHIQUITA                   0.44 
+  0.317 KG       1.39 EUR/KG
+                              ­­­­­­­­­­
+YHTEENSÄ                           7.59 
+KORTTITAPAHTUMA
+
+Kortti:                     VISA CREDIT 
+                 **** **** **** 1111 CP 
+Sovellus:              A000000000000001 
+Tap.nro/Varmennus:         11111/000005 
+Yritys/Ala:           000000000000/1111 
+
+Autentisointi:         9FFFFFFFFFFF2222 
+Viite:                     123456789123 
+
+Credit/Veloitus                7,59 EUR 
+
+
+Bonukseen kirjattu  11111           7.59
+Viite:  12345678912311
+
+ALV           VEROTON   VERO  VEROLLINEN
+4  14.00%       6.67     0.92       7.59
+YHTEENSÄ        6.67     0.92       7.59
+
+          Kuinka onnistuimme?
+        Anna palautetta/kerro :
+anna.palautetta.info/s­market.kaukajarvi
+         
+
+
+
+
+

@@ -18,13 +18,35 @@ namespace ReceiptParser.Test
         }
 
         [Test]
-        public void ValidReceipt_ShouldParseFormat()
+        public void KnownReceipt_ShouldParseFormat()
         {
-            var input = new ReceiptDataIn(_testCtx.Prisma_Kaleva_Tampere_2016_10_19.Receipt);
+            var input = new ReceiptDataIn(_testCtx.Fuel_Abc_Prisma_Kaleva_Tampere_2016_10_19.Receipt);
 
             var actual = _parser.ParseReceiptFormat(input);
 
             Assert.AreEqual(ReceiptFormat.Fuel_Abc, actual);
+
+        }
+
+        [Test]
+        public void UnknownReceipt_ShouldParseFormat()
+        {
+            var input = new ReceiptDataIn(_testCtx.Unknown_Prisma_Kaleva_Tampere_2016_10_21.Receipt);
+
+            var actual = _parser.ParseReceiptFormat(input);
+
+            Assert.AreEqual(ReceiptFormat.Unknown, actual);
+
+        }
+
+        [Test]
+        public void UnknownReceiptTwo_ShouldParseFormat()
+        {
+            var input = new ReceiptDataIn(_testCtx.Unknown_Smarket_Kaukajarvi_2016_10_19.Receipt);
+
+            var actual = _parser.ParseReceiptFormat(input);
+
+            Assert.AreEqual(ReceiptFormat.Unknown, actual);
 
         }
     }

@@ -14,3 +14,20 @@ ALV  %   Veroton     Vero Verollinen    
 24,00      36,03     8,65      44,68 EUR
 
 Yhteensä                       44,68 EUR
+
+Bonukseen kirjattu ...12345    44,68 EUR
+Viite 123456789123    
+
+ 
+KORTTIMAKSUTOSITE
+Kortti:                      VISA CREDIT
+                **** **** **** 1234   CP
+Sovellus:               A123456789126456
+Tap.nro/Varmistus           12312/121233
+Yritys/ala            122312312-132/1232
+Autentisointi           ASDF545656FDAFFF
+Viitenumero                 111111111111
+Luotto/Veloitus                44,68 EUR
+ 
+TERVETULOA UUDELLEEN             
+Aja taloudellisesti  www.motiva.fi

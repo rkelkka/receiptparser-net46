@@ -12,11 +12,12 @@ namespace ReceiptParser.Test
         //Expected parse result
         public readonly ReceiptFormat Format;
         public readonly string StationName;
-        public readonly float Qty;
-        public readonly float Price;
+        public readonly float? Qty;
+        public readonly float? Price;
         public readonly string Date;
 
-        internal TestData(string receipt, ReceiptFormat format, string station, float qty, float price, string date)
+        internal TestData(string receipt, ReceiptFormat format = ReceiptFormat.Unknown, 
+            string station = null, float? qty = null, float? price = null, string date = null)
         {
             Receipt = receipt;
             Format = format;

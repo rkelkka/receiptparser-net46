@@ -1,1 +1,1 @@
-Test data derived from PdfParser output based on real pdf receipt. UTF-8 encoding. Payment card information removed from the end.
+Test data derived from PdfParser output based on real pdf receipt. UTF-8 encoding. Payment and transaction info replaced with dummy data.
