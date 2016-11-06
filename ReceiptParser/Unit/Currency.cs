@@ -2,11 +2,11 @@
 {
     public class Currency
     {
-        public readonly decimal Eur;
+        public readonly decimal Value;
 
         public Currency(decimal eur)
         {
-            Eur = eur;
+            Value = eur;
         }
     }
 }

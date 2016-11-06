@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbcFuelReceiptParser.cs" />
+    <Compile Include="ReceiptParser.Interface\ReceiptParseException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReceiptFormatParser.cs" />
     <Compile Include="ReceiptParser.Interface\Input\ReceiptDataIn.cs" />

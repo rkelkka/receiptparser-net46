@@ -1,4 +1,5 @@
 ﻿using ReceiptParser.ReceiptParser.Interface.Output;
+using System;
 
 namespace ReceiptParser.Test
 {
@@ -12,12 +13,12 @@ namespace ReceiptParser.Test
         //Expected parse result
         public readonly ReceiptFormat Format;
         public readonly string StationName;
-        public readonly float? Qty;
-        public readonly float? Price;
-        public readonly string Date;
+        public readonly decimal? Qty;
+        public readonly decimal? Price;
+        public readonly DateTime? Date;
 
         internal TestData(string receipt, ReceiptFormat format = ReceiptFormat.Unknown, 
-            string station = null, float? qty = null, float? price = null, string date = null)
+            string station = null, decimal? qty = null, decimal? price = null, DateTime? date = null)
         {
             Receipt = receipt;
             Format = format;

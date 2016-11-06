@@ -1,4 +1,5 @@
 ﻿using ReceiptParser.ReceiptParser.Interface.Input;
+using System;
 
 namespace ReceiptParser.ReceiptParser.Interface
 {
@@ -9,7 +10,9 @@ namespace ReceiptParser.ReceiptParser.Interface
         /// </summary>
         /// <param name="receipt"></param>
         /// <returns>T</returns>
-        /// <exception cref="InvalidArgumentException">when input data is unsupported format</exception>
+        /// /// <exception cref="ArgumentNullException">when input data is null</exception>
+        /// <exception cref="ArgumentException">when input data is empty or unrecognized format</exception>
+        /// <exception cref="ReceiptParseException">when input data cannot be parsed</exception>
         T ParseReceipt(ReceiptDataIn receipt);
     }
 }

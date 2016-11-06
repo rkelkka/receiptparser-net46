@@ -2,11 +2,11 @@
 {
     public class Quantity
     {
-        public readonly decimal Litres;
+        public readonly decimal Value;
         
         public Quantity(decimal litres)
         {
-            Litres = litres;
+            Value = litres;
         }
     }
 }

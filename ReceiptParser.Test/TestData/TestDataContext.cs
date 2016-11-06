@@ -24,7 +24,7 @@ namespace ReceiptParser.Test
 
             var receipt = File.ReadAllText(GetPath("Prisma_Kaleva_Tampere_2016-10-19.txt"), Encoding.UTF8);
             ctx.Fuel_Abc_Prisma_Kaleva_Tampere_2016_10_19 = new TestData(receipt,
-                ReceiptFormat.Fuel_Abc, "ABC PRISMA KALEVA", 31.05f, 44.68f, "2016-10-19");//dd.mm.yy is the date format in the receipt
+                ReceiptFormat.Fuel_Abc, "ABC PRISMA KALEVA", 31.05m, 44.68m, new DateTime(2016, 10, 19));
 
             receipt = File.ReadAllText(GetPath("Prisma_Kaleva_Tampere_2016-10-21.txt"), Encoding.UTF8);
             ctx.Unknown_Prisma_Kaleva_Tampere_2016_10_21 = new TestData(receipt, ReceiptFormat.Unknown);
