@@ -21,5 +21,15 @@ namespace ReceiptParser.ReceiptParser.Interface.Output
             Date = date;
         }
 
+        public string AsFormattedString()
+        {
+            return string.Format(
+                "Station: {0}\n" + 
+                "Quantity: {1}\n" + 
+                "Price: {2}\n" + 
+                "Date: {3}\n",
+                Station.Name, Litres.Value, Eur.Value, Date);
+        }
+
     }
 }
