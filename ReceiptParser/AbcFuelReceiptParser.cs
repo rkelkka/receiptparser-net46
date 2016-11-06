@@ -129,7 +129,7 @@ namespace ReceiptParser
                 var priceValue = match.Groups[PRICE_AMOUNT_GROUP_IX];
                 return new Currency(ParseWithComma(priceValue.Value));
             }
-            throw new ReceiptParseException("invalid quantity format", qtyPriceLine);
+            throw new ReceiptParseException("invalid price format", qtyPriceLine);
         }
 
         private decimal ParseWithComma(string value)
