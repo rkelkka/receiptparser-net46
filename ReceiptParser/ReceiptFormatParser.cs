@@ -5,9 +5,9 @@ using ReceiptParser.ReceiptParser.Interface.Output;
 
 namespace ReceiptParser
 {
-    public class ReceiptCategoryParser : IReceiptCategoryParser
+    public class ReceiptFormatParser : IReceiptFormatParser
     {
-        public ReceiptCategory ParseReceiptCategory(ReceiptDataIn fuelReceipt)
+        public ReceiptFormat ParseReceiptFormat(ReceiptDataIn receipt)
         {
             throw new NotImplementedException();
         }

@@ -5,26 +5,26 @@ using ReceiptParser.ReceiptParser.Interface.Output;
 namespace ReceiptParser.Test
 {
     [TestFixture]
-    class ReceiptCategoryParserTest
+    class ReceiptFormatParserTest
     {
         private TestDataContext _testCtx;
-        private ReceiptCategoryParser _parser;
+        private ReceiptFormatParser _parser;
 
         [SetUp]
         public void SetUp()
         {
             _testCtx = TestDataContext.Load();
-            _parser = new ReceiptCategoryParser();
+            _parser = new ReceiptFormatParser();
         }
 
         [Test]
-        public void ValidReceipt_ShouldParseCategory()
+        public void ValidReceipt_ShouldParseFormat()
         {
             var input = new ReceiptDataIn(_testCtx.Prisma_Kaleva_Tampere_2016_10_19.Receipt);
 
-            var actual = _parser.ParseReceiptCategory(input);
+            var actual = _parser.ParseReceiptFormat(input);
 
-            Assert.AreEqual(ReceiptCategory.Fuel, actual);
+            Assert.AreEqual(ReceiptFormat.Fuel_Abc, actual);
 
         }
     }

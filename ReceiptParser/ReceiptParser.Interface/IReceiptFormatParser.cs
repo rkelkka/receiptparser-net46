@@ -3,7 +3,7 @@ using ReceiptParser.ReceiptParser.Interface.Output;
 
 namespace ReceiptParser.ReceiptParser.Interface
 {
-    interface IReceiptCategoryParser
+    interface IReceiptFormatParser
     {
 
         /// <summary>
@@ -11,6 +11,6 @@ namespace ReceiptParser.ReceiptParser.Interface
         /// </summary>
         /// <param name="recipt"></param>
         /// <returns></returns>
-        ReceiptCategory ParseReceiptCategory(ReceiptDataIn fuelReceipt);
+        ReceiptFormat ParseReceiptFormat(ReceiptDataIn receipt);
     }
 }

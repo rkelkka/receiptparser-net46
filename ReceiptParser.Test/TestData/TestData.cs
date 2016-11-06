@@ -10,16 +10,16 @@ namespace ReceiptParser.Test
         public readonly string Receipt;
 
         //Expected parse result
-        public readonly ReceiptCategory Category;
+        public readonly ReceiptFormat Format;
         public readonly string StationName;
         public readonly float Qty;
         public readonly float Price;
         public readonly string Date;
 
-        internal TestData(string receipt, ReceiptCategory cat, string station, float qty, float price, string date)
+        internal TestData(string receipt, ReceiptFormat format, string station, float qty, float price, string date)
         {
             Receipt = receipt;
-            Category = cat;
+            Format = format;
             StationName = station;
             Qty = qty;
             Price = price;

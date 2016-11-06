@@ -23,7 +23,7 @@ namespace ReceiptParser.Test
             var receipt = File.ReadAllText(GetPath("Prisma_Kaleva_Tampere_2016-10-19.txt"), Encoding.UTF8);
 
             ctx.Prisma_Kaleva_Tampere_2016_10_19 = new TestData(receipt,
-                ReceiptCategory.Fuel, "ABC PRISMA KALEVA", 31.05f, 44.68f, "2016-10-19");//dd.mm.yy is the date format in the receipt
+                ReceiptFormat.Fuel_Abc, "ABC PRISMA KALEVA", 31.05f, 44.68f, "2016-10-19");//dd.mm.yy is the date format in the receipt
 
             return ctx;
             
