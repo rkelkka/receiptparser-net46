@@ -9,6 +9,17 @@ using ReceiptParser.ReceiptParser.Interface.Input;
 
 namespace CmdLine
 {
+    class ParseResult
+    {
+        public readonly PdfTextOut PdfText;
+        public readonly FuelReceiptData ReceiptData;
+
+        public ParseResult(PdfTextOut pdfAsText, FuelReceiptData receiptData)
+        {
+            PdfText = pdfAsText;
+            ReceiptData = receiptData;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -21,23 +32,35 @@ namespace CmdLine
             }
 
             var fileName = args[0];
+            byte[] bytes = File.ReadAllBytes(fileName);
 
-            var pdfAsText = ParseFile(ctx, fileName);
-            Console.WriteLine(pdfAsText.RawText);
-            SaveText(pdfAsText.RawText, fileName);
+            var result = ProcessBytes(ctx, bytes);
 
+            var rawText = result.PdfText.RawText;
+            SaveText(rawText, fileName);
+            Console.WriteLine(rawText);
+
+            var formattedResult = result.ReceiptData.AsFormattedString();
+            SaveText(formattedResult, "parsedData_" + fileName);
+            Console.WriteLine(formattedResult);
+        }
+
+        private static ParseResult ProcessBytes(Context ctx, byte[] bytes)
+        {
+            var pdfAsText = ParseBytesAsPdf(ctx, bytes);
+            
             var receiptInput = new ReceiptDataIn(pdfAsText.RawText);
             var format = ParseReceiptFormat(ctx, receiptInput);
             var receiptData = ParseReceipt(ctx, format, receiptInput);
-            
+
             var formattedData = receiptData.AsFormattedString();
-            Console.WriteLine(formattedData);
-            SaveText(formattedData, "parsedData_" + fileName);
+
+            return new ParseResult(pdfAsText, receiptData);
         }
 
-        private static PdfTextOut ParseFile(Context ctx, string fileName)
+        private static PdfTextOut ParseBytesAsPdf(Context ctx, byte[] bytes)
         {
-            byte[] bytes = File.ReadAllBytes(fileName);
+            
             var text = ParseBytes(ctx.PdfParser, bytes);
             return text;
         }
