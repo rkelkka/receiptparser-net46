@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using ReceiptParser.ReceiptParser.Interface.Input;
 using ReceiptParser.ReceiptParser.Interface.Output;
+using System;
 
 namespace ReceiptParser.Test
 {
@@ -48,6 +49,19 @@ namespace ReceiptParser.Test
 
             Assert.AreEqual(ReceiptFormat.Unknown, actual);
 
+        }
+
+        [Test]
+        public void NullReceipt_ShouldThrow()
+        {
+            Assert.Throws<ArgumentNullException>(() => _parser.ParseReceiptFormat(null));
+        }
+
+        [Test]
+        public void EmptyReceipt_ShouldThrow()
+        {
+            var emptyReceipt = new ReceiptDataIn("");
+            Assert.Throws<ArgumentException>(() => _parser.ParseReceiptFormat(emptyReceipt));
         }
     }
 }
